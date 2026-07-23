@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Neko Coffee - Pedido</title>
+</head>
+<body>
+
+<header>
+<table width="100%" border="0" cellpadding="8">
+<tbody><tr>
+    <td width="60%">
+        <h1>Neko Coffee</h1>
+    </td>
+    <td width="40%" align="right">
+        <nav>
+            <a href="index.html">Inicio</a> |
+            <a href="menu.html">Menú</a> |
+            <a href="nosotros.html">Nosotros</a> |
+            <a href="galeria.html">Galería</a> |
+            <a href="checkout.html">Pedido</a>
+        </nav>
+    </td>
+</tr>
+</tbody></table>
+</header>
+
+<hr>
+
+<main>
+
+<h2>Realiza tu pedido</h2>
+<p>Completa el siguiente formulario para hacer tu pedido en Neko Coffee.</p>
+
+<form action="#" method="post">
+
+<fieldset>
+<legend>Datos del cliente</legend>
+
+<p>
+<label for="nombre">Nombre completo:</label><br>
+<input type="text" id="nombre" name="nombre" required>
+</p>
+
+<p>
+<label for="email">Correo electrónico:</label><br>
+<input type="email" id="email" name="email" required>
+</p>
+
+<p>
+<label for="telefono">Teléfono:</label><br>
+<input type="tel" id="telefono" name="telefono" required>
+</p>
+
+<p>
+<label for="direccion">Dirección de entrega:</label><br>
+<textarea id="direccion" name="direccion" rows="3" cols="40"></textarea>
+</p>
+
+</fieldset>
+
+<fieldset>
+<legend>Selecciona tus productos</legend>
+
+<p><input type="checkbox" id="matcha" name="producto" value="matcha_latte"> <label for="matcha">Matcha Latte - Q28.00</label></p>
+<p><input type="checkbox" id="hojicha" name="producto" value="hojicha_latte"> <label for="hojicha">Hojicha Latte - Q26.00</label></p>
+<p><input type="checkbox" id="americano" name="producto" value="cafe_americano"> <label for="americano">Café Americano - Q18.00</label></p>
+<p><input type="checkbox" id="dorayaki" name="producto" value="dorayaki"> <label for="dorayaki">Dorayaki - Q20.00</label></p>
+<p><input type="checkbox" id="mochi" name="producto" value="mochi"> <label for="mochi">Mochi (3 unidades) - Q24.00</label></p>
+<p><input type="checkbox" id="onigiri" name="producto" value="onigiri"> <label for="onigiri">Onigiri - Q16.00</label></p>
+
+<p>
+<label for="cantidad">Cantidad total de productos:</label><br>
+<input type="number" id="cantidad" name="cantidad" min="1" value="1">
+</p>
+
+</fieldset>
+
+<fieldset>
+<legend>Tipo de entrega</legend>
+<p><input type="radio" id="recoger" name="entrega" value="recoger" checked> <label for="recoger">Recoger en tienda</label></p>
+<p><input type="radio" id="domicilio" name="entrega" value="domicilio"> <label for="domicilio">Entrega a domicilio</label></p>
+</fieldset>
+
+<fieldset>
+<legend>Método de pago</legend>
+<p><input type="radio" id="efectivo" name="pago" value="efectivo" checked> <label for="efectivo">Efectivo al recibir</label></p>
+<p><input type="radio" id="tarjeta" name="pago" value="tarjeta"> <label for="tarjeta">Tarjeta al recibir</label></p>
+<p><input type="radio" id="transferencia" name="pago" value="transferencia"> <label for="transferencia">Transferencia bancaria</label></p>
+</fieldset>
+
+<fieldset>
+<legend>Comentarios</legend>
+<textarea name="comentarios" rows="3" cols="40" placeholder="Ej. sin azúcar, alergias, instrucciones especiales"></textarea>
+</fieldset>
+
+<p>
+<input type="submit" value="Confirmar pedido">
+<input type="reset" value="Limpiar formulario">
+</p>
+
+</form>
+
+</main>
+
+<hr>
+
+<footer>
+<table width="100%" border="0" cellpadding="8">
+<tbody><tr>
+    <td width="60%">
+        <p>&copy; 2026 Neko Coffee. Todos los derechos reservados.<br>
+        Sitio desarrollado por Luis Enrique Valey Osorio</p>
+    </td>
+    <td width="40%" align="right">
+        <p><a href="contacto.html">Contacto</a><br>
+        Instagram | Facebook | X<br>
+        Tel: +502 1234-5678<br>
+        Calle Sakura 123, Ciudad de Guatemala</p>
+    </td>
+</tr>
+</tbody></table>
+</footer>
+
+</body>
+</html>
