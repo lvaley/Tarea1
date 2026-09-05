@@ -1,0 +1,53 @@
+.contacto-title {
+  font-size: 2.2rem;
+  margin-top: 4px;
+}
+
+.contacto-subtitle {
+  color: var(--text-muted);
+  margin-top: 8px;
+}
+
+.contact-info-list .list-group-item {
+  background: transparent;
+  border-color: var(--border);
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding: 14px 0;
+}
+
+.contact-info-list strong {
+  color: var(--heading);
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.contact-info-list span {
+  color: var(--text-muted);
+}
+
+.contacto-faq-heading {
+  font-size: 1.2rem;
+  margin: 32px 0 16px;
+}
+
+.contacto-faq-teaser {
+  color: var(--text-muted);
+  margin-bottom: 18px;
+  max-width: 380px;
+}
+
+.contact-map {
+  margin-top: 32px;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.contact-map iframe {
+  width: 100%;
+  aspect-ratio: 900 / 420;
+  border: 0;
+  display: block;
+}

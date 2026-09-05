@@ -1,0 +1,127 @@
+:root {
+  --bg: #faf8f5;
+  --surface: #ffffff;
+  --text: #3a352f;
+  --text-muted: #7a7269;
+  --heading: #201c18;
+  --accent: #b5863f;
+  --accent-dark: #8a6529;
+  --border: #e7e1d8;
+
+  --font-sans:
+    -apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, Roboto, sans-serif;
+
+  color-scheme: light;
+  font: 16px/1.6 var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  padding-left: env(safe-area-inset-left);
+  padding-right: env(safe-area-inset-right);
+  overflow-x: hidden;
+}
+
+#root {
+  min-height: 100svh;
+  display: flex;
+  flex-direction: column;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--heading);
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+a {
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.section {
+  padding: 88px 0;
+}
+
+@media (max-width: 767px) {
+  .section {
+    padding: 56px 0;
+  }
+}
+
+.eyebrow {
+  display: inline-block;
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--accent-dark);
+  margin-bottom: 14px;
+}
+
+.btn-neko {
+  display: inline-block;
+  background: var(--heading);
+  color: #fff;
+  border: none;
+  padding: 13px 30px;
+  border-radius: 999px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  text-decoration: none;
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.btn-neko:hover {
+  background: var(--accent-dark);
+  color: #fff;
+  transform: translateY(-1px);
+}
+
+.btn-neko-outline {
+  display: inline-block;
+  background: transparent;
+  color: var(--heading);
+  border: 1.5px solid var(--heading);
+  padding: 11.5px 28px;
+  border-radius: 999px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.btn-neko-outline:hover {
+  background: var(--heading);
+  color: #fff;
+}
+
+/* Áreas de seguridad: evita que el contenido toque los bordes en móviles */
+@media (max-width: 575.98px) {
+  .container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}

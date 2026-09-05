@@ -1,0 +1,130 @@
+.site-footer {
+  background-color: #161311;
+  color: #cfc9c2;
+  padding: 64px 0 calc(28px + env(safe-area-inset-bottom));
+  font-size: 0.92rem;
+}
+
+.footer-heading {
+  color: #f5efe6;
+  font-weight: 600;
+  font-size: 0.8rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links li {
+  margin-bottom: 12px;
+}
+
+.footer-links a {
+  color: #b6afa6;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.footer-links a:hover {
+  color: #f5efe6;
+}
+
+.footer-links-icon a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer-links-icon svg {
+  flex-shrink: 0;
+  color: #cba86a;
+}
+
+.footer-contact-btn {
+  display: inline-block;
+  margin-top: 6px;
+  padding: 9px 20px;
+  border: 1.5px solid #cba86a;
+  border-radius: 999px;
+  color: #f5efe6;
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.footer-contact-btn:hover {
+  background: #cba86a;
+  color: #161311;
+}
+
+.footer-brand-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-brand {
+  font-size: 1.4rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  color: #f5efe6;
+}
+
+.footer-tagline {
+  color: #8f877c;
+  font-size: 0.85rem;
+  margin: 8px 0 22px;
+}
+
+.footer-social {
+  display: flex;
+  gap: 12px;
+}
+
+.footer-social a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border: 1px solid #4a443c;
+  border-radius: 50%;
+  color: #cfc9c2;
+  transition: all 0.2s ease;
+}
+
+.footer-social a:hover {
+  border-color: #cba86a;
+  color: #cba86a;
+}
+
+.footer-divider {
+  border: none;
+  border-top: 1px solid #322d27;
+  margin: 48px 0 20px;
+}
+
+.footer-bottom {
+  font-size: 0.8rem;
+  color: #8f877c;
+}
+
+.footer-legal {
+  margin-bottom: 8px;
+}
+
+.footer-credit strong {
+  color: #cfc9c2;
+  font-weight: 600;
+}
+
+@media (min-width: 768px) {
+  .footer-credit {
+    text-align: right;
+  }
+}
