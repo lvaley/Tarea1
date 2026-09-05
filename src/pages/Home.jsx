@@ -6,9 +6,9 @@ import Carousel from 'react-bootstrap/Carousel'
 import Card from 'react-bootstrap/Card'
 import './Home.css'
 
-import SakuraBanner from '../assets/Sakura-Banner.jpg'
-import MochiBanner from '../assets/Mochi-Banner.jpg'
-import RinconBanner from '../assets/Rincon-Banner.jpg'
+import SakuraBanner from '../assets/Sakura-banner.jpg'
+import MochiBanner from '../assets/Mochi-banner.jpg'
+import RinconBanner from '../assets/Rincon-banner.jpg'
 
 import MatchaLatte from '../assets/Matcha-Latte.jpg'
 import Dorayaki from '../assets/Dorayaki.jpg'
