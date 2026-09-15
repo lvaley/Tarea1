@@ -35,12 +35,6 @@ const MailIcon = () => (
   </Icon>
 )
 
-const PhoneIcon = () => (
-  <Icon>
-    <path d="M6.6 10.8a14.8 14.8 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 9.4 9.4 0 0 0 3 .48 1 1 0 0 1 1 1V19.5a1 1 0 0 1-1 1A16.5 16.5 0 0 1 3.5 4a1 1 0 0 1 1-1H7.7a1 1 0 0 1 1 1 9.4 9.4 0 0 0 .48 3 1 1 0 0 1-.25 1Z" />
-  </Icon>
-)
-
 const InstagramIcon = () => (
   <Icon>
     <rect x="3.5" y="3.5" width="17" height="17" rx="5" />
