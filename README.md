@@ -124,7 +124,7 @@ Cada usuario tiene su propio historial de pedidos simulado, visible en `/perfil`
 - **Estilos**: no se usa CSS de terceros más allá de Bootstrap; cada página/componente tiene su propio archivo `.css` con la paleta de marca (dorado `#b5863f` / carbón `#201c18`).
 ## Cómo visualizar la página
 
-1. Abrir el enlace desplegado en Netlify: `https://neko-coffee-v1.netlify.app/`.
+1. Abrir el enlace desplegado en Netlify: `https://neko-coffee-v2.netlify.app/`.
 
 ## Autor
 
