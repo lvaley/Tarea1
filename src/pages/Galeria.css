@@ -1,0 +1,36 @@
+.galeria-title {
+  font-size: 2.2rem;
+  margin-top: 4px;
+}
+
+.galeria-subtitle {
+  max-width: 520px;
+  margin: 12px auto 0;
+  color: var(--text-muted);
+}
+
+.galeria-thumb-btn {
+  padding: 0;
+  border: none;
+  background: none;
+  width: 100%;
+  cursor: pointer;
+  border-radius: 14px;
+  overflow: hidden;
+}
+
+.galeria-thumb {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.galeria-thumb-btn:hover .galeria-thumb {
+  transform: scale(1.05);
+}
+
+.galeria-modal-img {
+  width: 100%;
+  display: block;
+}

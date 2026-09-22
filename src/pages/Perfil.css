@@ -1,0 +1,128 @@
+.perfil-title {
+  font-size: 2.2rem;
+  margin-top: 4px;
+}
+
+.perfil-subtitle {
+  color: var(--text-muted);
+  margin-top: 8px;
+}
+
+.perfil-card {
+  border: 1px solid var(--border);
+  border-radius: 16px;
+}
+
+.perfil-card .card-body {
+  padding: 28px;
+}
+
+.perfil-identity {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid var(--border);
+  margin-bottom: 8px;
+}
+
+.perfil-avatar {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+  background: var(--accent);
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+.perfil-name {
+  font-size: 1.3rem;
+  margin-bottom: 6px;
+}
+
+.perfil-data-list .list-group-item {
+  background: transparent;
+  border-color: var(--border);
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  padding: 14px 0;
+}
+
+.perfil-data-label {
+  font-size: 0.76rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--text-muted);
+  font-weight: 600;
+}
+
+.perfil-data-value {
+  color: var(--heading);
+  font-size: 0.95rem;
+  word-break: break-word;
+}
+
+.perfil-orders-header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 18px;
+}
+
+.perfil-section-title {
+  font-size: 1.2rem;
+}
+
+.perfil-total-spent {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+.perfil-total-spent strong {
+  color: var(--accent-dark);
+}
+
+.perfil-empty {
+  color: var(--text-muted);
+  padding: 20px 0;
+}
+
+.perfil-table thead th {
+  border-bottom: 1px solid var(--border);
+  color: var(--text-muted);
+  font-size: 0.74rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  font-weight: 600;
+}
+
+.perfil-table td {
+  border-color: var(--border) !important;
+  font-size: 0.92rem;
+}
+
+.perfil-order-id {
+  font-weight: 600;
+  color: var(--heading);
+  white-space: nowrap;
+}
+
+.perfil-order-total {
+  font-weight: 700;
+  color: var(--accent-dark);
+  white-space: nowrap;
+}
+
+.perfil-note {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  margin-top: 16px;
+}
