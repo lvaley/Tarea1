@@ -1,0 +1,44 @@
+.menu-title {
+  font-size: 2.4rem;
+  margin-top: 4px;
+}
+
+.menu-subtitle {
+  max-width: 520px;
+  margin: 14px auto 0;
+  color: var(--text-muted);
+}
+
+.category-card-link {
+  text-decoration: none;
+  display: block;
+}
+
+.category-card {
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  overflow: hidden;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.category-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 18px 34px rgba(32, 28, 24, 0.1);
+}
+
+.category-card .card-title {
+  color: var(--heading);
+  font-size: 1.2rem;
+}
+
+.category-card .card-text {
+  color: var(--text-muted);
+}
+
+.category-card-cta {
+  display: inline-block;
+  margin-top: 8px;
+  font-weight: 600;
+  color: var(--accent-dark);
+  font-size: 0.9rem;
+}
