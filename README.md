@@ -298,5 +298,3 @@ En la base de datos las contraseñas se guardan encriptadas (bcrypt); estas son 
 
 - **Estudiante:** Luis Enrique Valey Osorio (9490-21-16222)
 - **Proyecto:** Tienda en Línea con React, Bootstrap, React Router y estado global (Context API + useReducer)
-
----
