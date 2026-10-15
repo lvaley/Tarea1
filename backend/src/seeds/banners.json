@@ -1,0 +1,23 @@
+[
+  {
+    "title": "Sakura Latte de temporada",
+    "text": "Edición limitada con jarabe de flor de cerezo, disponible solo esta primavera.",
+    "imageKey": "sakura-banner",
+    "order": 0,
+    "isActive": true
+  },
+  {
+    "title": "2x1 en mochi los miércoles",
+    "text": "Todos los miércoles, lleva dos mochis al precio de uno. Válido para llevar o en tienda.",
+    "imageKey": "mochi-banner",
+    "order": 1,
+    "isActive": true
+  },
+  {
+    "title": "Nuevo rincón de lectura",
+    "text": "Un espacio tranquilo con wifi, ideal para trabajar o leer acompañado de nuestros gatos.",
+    "imageKey": "rincon-banner",
+    "order": 2,
+    "isActive": true
+  }
+]
