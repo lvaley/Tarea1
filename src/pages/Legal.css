@@ -1,0 +1,29 @@
+.legal-title {
+  font-size: 2.2rem;
+  margin-top: 4px;
+}
+
+.legal-updated {
+  color: var(--text-muted);
+  font-size: 0.88rem;
+  margin-top: 8px;
+}
+
+.legal-content section {
+  margin-bottom: 32px;
+}
+
+.legal-content h2 {
+  font-size: 1.15rem;
+  margin-bottom: 10px;
+}
+
+.legal-content p {
+  color: var(--text);
+  line-height: 1.7;
+}
+
+.legal-content a {
+  color: var(--accent-dark);
+  font-weight: 600;
+}

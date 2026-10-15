@@ -1,0 +1,184 @@
+.site-navbar {
+  background: rgba(250, 248, 245, 0.82) !important;
+  backdrop-filter: saturate(180%) blur(14px);
+  -webkit-backdrop-filter: saturate(180%) blur(14px);
+  border-bottom: 1px solid var(--border);
+  padding-top: calc(14px + env(safe-area-inset-top));
+  padding-bottom: 14px;
+  padding-left: env(safe-area-inset-left);
+  padding-right: env(safe-area-inset-right);
+  transition: background 0.2s ease;
+}
+
+.site-navbar-brand {
+  font-weight: 700;
+  font-size: 1.05rem;
+  letter-spacing: 0.08em;
+  color: var(--heading) !important;
+  white-space: nowrap;
+}
+
+.site-navbar-links .nav-link {
+  color: var(--text) !important;
+  font-size: 0.92rem;
+  font-weight: 500;
+  padding: 8px 16px !important;
+  transition: color 0.2s ease;
+}
+
+.site-navbar-links .nav-link:hover,
+.site-navbar-links .nav-link-active {
+  color: var(--accent-dark) !important;
+}
+
+.site-navbar-cta {
+  margin-left: 8px;
+  background: var(--heading);
+  border-radius: 999px;
+  padding: 8px 22px !important;
+  font-weight: 600 !important;
+  transition: background 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.site-navbar-cta:hover {
+  background: var(--accent-dark);
+}
+
+/* Especificidad reforzada: sin esto, la regla .site-navbar-links .nav-link(:hover)
+   (más específica) pisa el color de este botón y el texto se vuelve invisible. */
+.site-navbar-links .nav-link.site-navbar-cta,
+.site-navbar-links .nav-link.site-navbar-cta:hover,
+.site-navbar-links .nav-link.site-navbar-cta:focus,
+.site-navbar-links .nav-link.site-navbar-cta:active,
+.site-navbar-links .nav-link.site-navbar-cta:visited {
+  color: #fff !important;
+}
+
+.cart-count-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 20px;
+  height: 20px;
+  padding: 0 5px;
+  border-radius: 999px;
+  background: var(--accent);
+  color: #fff;
+  font-size: 0.72rem;
+  font-weight: 700;
+  line-height: 1;
+}
+
+/* ---- Estado de sesión ---- */
+
+/* Visitante: enlace "Iniciar sesión" */
+.site-navbar-links .nav-link.site-navbar-login {
+  font-weight: 600 !important;
+  color: var(--accent-dark) !important;
+}
+
+.site-navbar-links .nav-link.site-navbar-login:hover {
+  color: var(--heading) !important;
+}
+
+/* Autenticado: menú con nombre + avatar */
+.site-navbar-user .dropdown-toggle {
+  display: inline-flex;
+  align-items: center;
+  color: var(--text) !important;
+  font-size: 0.92rem;
+  font-weight: 500;
+  padding: 6px 12px !important;
+}
+
+.site-navbar-user .dropdown-toggle:hover {
+  color: var(--accent-dark) !important;
+}
+
+.site-navbar-user-title {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+}
+
+.user-avatar {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: var(--accent);
+  color: #fff;
+  font-size: 0.75rem;
+  font-weight: 700;
+  line-height: 1;
+  flex-shrink: 0;
+}
+
+.user-name {
+  font-weight: 600;
+  color: var(--heading);
+  max-width: 130px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.site-navbar-user .dropdown-menu {
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 6px;
+  box-shadow: 0 14px 30px rgba(32, 28, 24, 0.12);
+}
+
+.site-navbar-user .dropdown-item {
+  border-radius: 8px;
+  font-size: 0.9rem;
+  padding: 8px 12px;
+}
+
+.site-navbar-user .dropdown-item:active {
+  background: var(--accent);
+  color: #fff;
+}
+
+/* Compensa la altura del navbar fijo (incluye notch en iOS) */
+.app-main {
+  padding-top: calc(72px + env(safe-area-inset-top));
+}
+
+@media (max-width: 991px) {
+  .site-navbar-links {
+    padding-top: 12px;
+    gap: 4px;
+  }
+
+  .site-navbar-cta {
+    margin-left: 0;
+    margin-top: 8px;
+    display: inline-flex;
+    width: fit-content;
+  }
+
+  .site-navbar-user .dropdown-toggle {
+    padding-left: 16px !important;
+  }
+
+  .site-navbar-user .dropdown-menu {
+    border: none;
+    box-shadow: none;
+    padding-left: 16px;
+    background: transparent;
+  }
+}
+
+@media (max-width: 360px) {
+  .site-navbar-brand {
+    font-size: 0.9rem;
+    letter-spacing: 0.05em;
+  }
+}
