@@ -146,7 +146,7 @@ El `Navbar` consume `useAuth()` y reacciona sin recargar la página:
 
 ### Cuentas de prueba
 
-Se crean con `npm run seed` en el backend (ver más abajo). También puedes crear una cuenta propia en `/register`; las cuentas registradas son siempre de tipo `cliente`.
+Se crean con `npm run seed` en el backend. También se puede crear una cuenta propia en `/register`; las cuentas registradas son siempre de tipo `cliente`.
 
 ## Pedidos (frontend)
 
@@ -265,7 +265,7 @@ El frontend usa primero `imageUrl`, luego `imageKey` y, si no hay ninguna, un pl
 - El **slug** se genera una vez a partir del nombre y no cambia al renombrar, para mantener las URLs estables.
 - Si el producto tiene **tamaños** (`sizes`), el precio base se calcula automáticamente como el más barato.
 
-### Usuarios iniciales (`npm run seed`)
+### Usuarios iniciales
 
 | Correo | Contraseña | Rol |
 |---|---|---|
