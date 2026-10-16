@@ -334,7 +334,7 @@ Importar `Neko-Coffee-Tarea5.postman_collection.json` y cambiar la variable `bas
 - **Estilos**: no se usa CSS de terceros más allá de Bootstrap; cada página/componente tiene su propio archivo `.css` con la paleta de marca (dorado `#b5863f` / carbón `#201c18`).
 ## Cómo visualizar la página
 
-1. Abrir el enlace desplegado en Netlify: `https://neko-coffee-v2.netlify.app/`.
+1. Abrir el enlace desplegado en Netlify: `https://neko-coffee-v3.netlify.app/`.
 2. Abrir el enlace desplegado en Render: `https://tarea1-v02y.onrender.com`.
 
 ## Autor
