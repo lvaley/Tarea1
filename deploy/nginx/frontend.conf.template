@@ -1,0 +1,42 @@
+# Nginx interno del contenedor FRONTEND de Neko Coffee.
+# La imagen oficial de Nginx reemplaza ${APP_VERSION} y ${BACKEND_HOST}
+# al arrancar (solo variables de entorno definidas; $uri, $host, etc. no se tocan).
+
+server {
+    listen 80;
+    server_name _;
+
+    root  /usr/share/nginx/html;
+    index index.html;
+
+    # DNS interno de Docker: resuelve el nombre del backend cuando llega la petición,
+    # así Nginx arranca aunque el backend todavía no esté listo.
+    resolver 127.0.0.11 valid=10s ipv6=off;
+
+    # Toda respuesta dice qué versión la atendió (evidencia para el manual).
+    add_header X-App-Version "${APP_VERSION}" always;
+
+    # Comprobación rápida del contenedor.
+    location = /health {
+        access_log off;
+        default_type text/plain;
+        return 200 "ok ${APP_VERSION}\n";
+    }
+
+    # /api/* se reenvía al backend de la MISMA versión (mismo origen: sin problemas de CORS).
+    location /api/ {
+        set $backend_upstream http://${BACKEND_HOST}:5000;
+        proxy_pass $backend_upstream;
+        proxy_set_header Host              $host;
+        proxy_set_header X-Real-IP         $remote_addr;
+        proxy_set_header X-Forwarded-For   $proxy_add_x_forwarded_for;
+        proxy_set_header X-Forwarded-Proto $scheme;
+    }
+
+    # SPA: cualquier ruta de React Router devuelve index.html.
+    # Sin caché, para que el navegador vea la versión nueva justo después del cambio.
+    location / {
+        expires -1;
+        try_files $uri $uri/ /index.html;
+    }
+}
