@@ -1,0 +1,27 @@
+# ─────────────────────────────────────────────────────────────
+# Estrategia 1: RECREATE (reemplazo directo)
+# Un solo entorno. Para actualizar se detiene la versión actual y
+# se levanta la nueva en su lugar → hay tiempo sin servicio.
+#
+# La versión se elige con la variable APP_TAG (1.0.0 o 2.0.0).
+# ─────────────────────────────────────────────────────────────
+name: neko-recreate
+
+services:
+  backend:
+    image: neko-backend:${APP_TAG:-1.0.0}
+    env_file: ../../backend.env          # credenciales: NO están en la imagen ni en git
+    environment:
+      NODE_ENV: production
+      PORT: "5000"
+      CLIENT_URL: http://localhost:8080
+    restart: unless-stopped
+
+  frontend:
+    image: neko-frontend:${APP_TAG:-1.0.0}
+    ports:
+      - "8080:80"                         # http://localhost:8080
+    depends_on:
+      backend:
+        condition: service_healthy        # espera a que el backend responda /api/health
+    restart: unless-stopped
